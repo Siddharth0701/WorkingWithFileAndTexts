@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileAndTexts.WorkingWithFiles;
+using System;
 
 namespace FileAndTexts
 {
@@ -6,7 +7,11 @@ namespace FileAndTexts
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            FileUsingStream fs = new FileUsingStream();
+            fs.CommonMethodOfFileCreation();
+            fs.ReadFile();
+            fs.ReadFile();
+            //Console.WriteLine("Hello World!");
         }
     }
 }
