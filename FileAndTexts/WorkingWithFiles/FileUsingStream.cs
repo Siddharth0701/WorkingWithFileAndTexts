@@ -8,28 +8,31 @@ namespace FileAndTexts.WorkingWithFiles
     {
         FileStream file = null;
         public string path;
+        
 
         public void CommonMethodOfFileCreation()
         {
-            Console.WriteLine("******************************************************************File Creation**************************");
+           
             path = @"C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\WorkingWithFiles\myfile.txt";//verbatim literal
             file = new FileStream(path, FileMode.OpenOrCreate);
-            Console.WriteLine("File is created...");
+           
         }
+
         public void WriteFile()
         {
+            CommonMethodOfFileCreation();
            
             for (int i = 65; i <= 90; i++)
             {
                 file.WriteByte((byte)i);
             }
-        //    file.Close();
+           file.Close();
             Console.WriteLine("Writed file");
         }
-
         public void ReadFile()
         {
             //file read
+            CommonMethodOfFileCreation();
 
             int j = 0;
             while ((j = file.ReadByte()) != -1)
@@ -41,7 +44,9 @@ namespace FileAndTexts.WorkingWithFiles
             Console.WriteLine("\n read,");
         }
 
-       
+
+
+
 
 
     }
