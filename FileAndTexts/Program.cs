@@ -27,6 +27,7 @@ namespace FileAndTexts
             Console.WriteLine("Text .......................................");
 
             StringTexts texts = new StringTexts();
+            texts.ToUpperAndLower();
             texts.CompareString("hello","Hello");
             texts.Compare2String();
             texts.ToUpperAndLower();

@@ -8,6 +8,15 @@ namespace FileAndTexts.WorkingWithTexts
     {
         string s1 = "Hello";
         string s2 = "hello";
+        string fullname = "Siddharth Singh";
+
+        public void ToUpperAndLower()
+        {
+            Console.WriteLine("Formattion of strings.......");
+            Console.WriteLine("Lower case : " + s1.ToLower());
+            Console.WriteLine("Upper case : " + s1.ToUpper());
+            Console.WriteLine("Trim '{0}'",fullname.Trim());
+        }
         public void CompareString( string s1, string s2)
         {
             Console.WriteLine("If both strings are equal, it returns 0. If first string is greater than second string, it returns 1 else it returns -1.");
@@ -17,11 +26,7 @@ namespace FileAndTexts.WorkingWithTexts
         {
             Console.WriteLine("Compare using ComapreTo method : "+s1.CompareTo(s2));
           }
-        public void ToUpperAndLower()
-        {
-            Console.WriteLine("Lower case: " + s1.ToLower());
-            Console.WriteLine("Upper case: " + s1.ToUpper());
-        }
+        
         public void Concatenate()
         {
             Console.WriteLine("using Concat method");
