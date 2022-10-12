@@ -4,7 +4,6 @@ C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\bin\Debug\netco
 C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\bin\Debug\netcoreapp3.1\FileAndTexts.runtimeconfig.dev.json
 C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\bin\Debug\netcoreapp3.1\FileAndTexts.dll
 C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\bin\Debug\netcoreapp3.1\FileAndTexts.pdb
-C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\obj\Debug\netcoreapp3.1\FileAndTexts.csproj.AssemblyReference.cache
 C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\obj\Debug\netcoreapp3.1\FileAndTexts.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\obj\Debug\netcoreapp3.1\FileAndTexts.AssemblyInfoInputs.cache
 C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\obj\Debug\netcoreapp3.1\FileAndTexts.AssemblyInfo.cs

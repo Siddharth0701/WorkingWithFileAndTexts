@@ -15,7 +15,7 @@ namespace FileAndTexts.WorkingWithFiles
             s.WriteLine("hello c#");
             s.Close();
             f.Close();
-            Console.WriteLine("File created successfully...");
+            //Console.WriteLine("File created successfully...");
         }
 
 

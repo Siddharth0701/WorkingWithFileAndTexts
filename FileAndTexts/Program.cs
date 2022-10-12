@@ -8,36 +8,66 @@ namespace FileAndTexts
     {
         static void Main(string[] args)
         {
-            //FileUsingStream fs = new FileUsingStream();
-            ////fs.CommonMethodOfFileCreation();
-            //fs.WriteFile();
-            //fs.ReadFile();
+            Console.WriteLine("\n Working With Files................................................................");
+            FileUsingStream fs = new FileUsingStream();
+            Console.WriteLine("\n Stream File Created Sucessfully.................");
+            fs.FileCreateAndWrite();
+            Console.WriteLine("Read file data.......");
+            fs.readFileStream();
             
+            Console.WriteLine("\n...................");
 
-            //StreamWriterClasses streamWriterClasses = new StreamWriterClasses();
-            //streamWriterClasses.FileCreateAndWrite();
-            //StreamReadClasses streamReadClasses = new StreamReadClasses();
-            //streamReadClasses.StreamReads();
 
-            //BinaryWriterClasses binaryWriterClasses = new BinaryWriterClasses();
-            //binaryWriterClasses.BinaryWriteOperation();
-            //BinaryReadClasses binaryReadClasses = new BinaryReadClasses();
-            //binaryReadClasses.BinaryReadOperation();
+            StreamWriterClasses streamwriterclasses = new StreamWriterClasses();
+            Console.WriteLine("Stream Writer File Created...and Written..");
+            streamwriterclasses.FileCreateAndWrite();
+            Console.WriteLine("Stream Writer Read file...");
+            StreamReadClasses streamreadclasses = new StreamReadClasses();
+            streamreadclasses.StreamReads();
+            Console.WriteLine("...................");
 
-            Console.WriteLine("Text .......................................");
+            BinaryWriterClasses binarywriterclasses = new BinaryWriterClasses();
+            binarywriterclasses.BinaryWriteOperation();
+            BinaryReadClasses binaryreadclasses = new BinaryReadClasses();
+            Console.WriteLine("Binary read file...");
+            binaryreadclasses.BinaryReadOperation();
+
+            Console.WriteLine("\n .....FileInfo Class ... ");
+            FileInfoClassDemo fileInfoClass = new FileInfoClassDemo();
+            fileInfoClass.FileInfoCreateFile();
+            fileInfoClass.FileInfoWriteFile();
+            fileInfoClass.FileInfoReadFile();
+
+            Console.WriteLine("\n.............................. Directoty Creation and delation");
+            DirectoryInfoClass directoryInfoClass = new DirectoryInfoClass();
+            directoryInfoClass.CreateDirectory();
+            directoryInfoClass.DeleteDirectory();
+
+            Console.WriteLine("\n Working With Text ...........................................................");
 
             StringTexts texts = new StringTexts();
             texts.ToUpperAndLower();
-            texts.CompareString("hello","Hello");
+            texts.GetIndexOf();
+            texts.StringToNumberAndNumberTostring();
+            texts.checkIsNullOrEmptyAndWhiteSpace();
+            texts.CompareString("hello", "Hello");
             texts.Compare2String();
-            texts.ToUpperAndLower();
+
             texts.Concatenate();
             texts.Contain("Singham", "Singh");
 
             texts.CopyMethod();
             texts.getTypeMethod();
-            texts.GetIndexOf();
+
             texts.insertMethod();
+
+            Console.WriteLine("\n String Builder class and methods");
+
+            StringBuilderClassesDemo stringBuilderClassesDemo = new StringBuilderClassesDemo();
+            stringBuilderClassesDemo.StringBuilderDemo();
+
+            Console.WriteLine("String Immutable Demo...............................................................");
+            StringImmtableDemo stringImmtableDemo = new StringImmtableDemo();
         }
     }
 }

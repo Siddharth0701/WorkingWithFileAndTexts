@@ -6,42 +6,27 @@ namespace FileAndTexts.WorkingWithFiles
 {
     public class FileUsingStream
     {
-        FileStream file = null;
-        public string path;
         
-
-        public void CommonMethodOfFileCreation()
+        public void FileCreateAndWrite()
         {
-           
-            path = @"C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\WorkingWithFiles\myfile.txt";//verbatim literal
-            file = new FileStream(path, FileMode.OpenOrCreate);
-           
-        }
-
-        public void WriteFile()
-        {
-            CommonMethodOfFileCreation();
-           
+          string  path = @"C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\WorkingWithFiles\myFile.txt";//verbatim literal
+            FileStream f = new FileStream(path, FileMode.OpenOrCreate);//creating file stream  
             for (int i = 65; i <= 90; i++)
             {
-                file.WriteByte((byte)i);
+                f.WriteByte((byte)i);
             }
-           file.Close();
-            Console.WriteLine("Writed file");
+            f.Close();
         }
-        public void ReadFile()
+        public void readFileStream()
         {
-            //file read
-            CommonMethodOfFileCreation();
-
-            int j = 0;
-            while ((j = file.ReadByte()) != -1)
+            string path = @"C:\Users\siddh\source\repos\WorkingWithFileAndTexts\FileAndTexts\WorkingWithFiles\myFile.txt";//verbatim literal
+            FileStream f = new FileStream(path, FileMode.Open);
+            int i = 0;
+            while ((i = f.ReadByte()) != -1)
             {
-                Console.Write((char)j);
+                Console.Write((char)i);
             }
-            file.Close();
-
-            Console.WriteLine("\n read,");
+            f.Close();
         }
 
 
